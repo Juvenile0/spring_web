@@ -63,4 +63,10 @@ public class BookDaoImpl implements BookDao {
 
 
     }
+
+    @Override
+    public List<Book> getAllBooks() {
+        String hql = "from Book";
+        return sessionFactory.getCurrentSession().createQuery(hql).list();
+    }
 }

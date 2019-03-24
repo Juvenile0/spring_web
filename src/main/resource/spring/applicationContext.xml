@@ -20,7 +20,7 @@
     </context:component-scan>
 
     <!--数据库配置文件-->
-    <context:property-placeholder location="classpath:properties/db.properties"></context:property-placeholder>
+    <context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
 
 
     <bean id="DataSource" class="org.apache.commons.dbcp2.BasicDataSource">

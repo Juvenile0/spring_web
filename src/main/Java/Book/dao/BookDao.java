@@ -2,7 +2,6 @@ package Book.dao;
 
 import Book.entity.Book;
 
-import javax.persistence.Convert;
 import java.util.List;
 
 public interface BookDao {
@@ -11,6 +10,6 @@ public interface BookDao {
     boolean updateBook(int id,Book book);
     List<Book> getBookByType(String type);
     Book getBook(int id);
-
+    List<Book> getAllBooks();
 
 }

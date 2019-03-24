@@ -12,5 +12,5 @@ public interface BookService {
     List<Book> getBookByType(String  type);
     Book getBook(int id);
 
-
+    List<Book> getAllBooks();
 }
